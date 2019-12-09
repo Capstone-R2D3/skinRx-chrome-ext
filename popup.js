@@ -63,5 +63,5 @@ ingredients.forEach(ingredient => {
 
 const footnote = document.createElement('p');
 footnote.setAttribute('id', 'footnote');
-footnote.textContent = '*Toxicity levels range on a scale of 1 to 10: 1 to 2 is considered low hazard, 3 to 6 is moderate hazard, and 7 to 10 is high hazard.'
+footnote.textContent = '*Toxicity levels of 1 to 2 are considered low hazard, 3 to 6 are moderate hazard, and 7 to 10 are high hazard. If a given ingredient has a range for its toxicity, the hazard level depends on usage.'
 divTable2.appendChild(footnote);
