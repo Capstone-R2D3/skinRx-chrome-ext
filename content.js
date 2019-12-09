@@ -22,15 +22,14 @@ async function getData() {
 
     const product = document.querySelector('span.css-0').innerText;
 
-    console.log('ingredients: ', ingredients)
-
     try {
         const data = await fetchData('https://skinrx-server.herokuapp.com/api/ingredients', { ingredients });
-        console.log(data);
+
         let obj = {};
         obj.data = data;
         obj.brand = brand;
         obj.product = product;
+
         chrome.runtime.sendMessage(obj);
     } catch (error) {
         console.error(error);
@@ -49,27 +48,3 @@ async function getData() {
 }
 
 getData();
-
-// const xhr = new XMLHttpRequest();
-
-// xhr.open('POST', 'https://skinrx-server.herokuapp.com/api/ingredients');
-
-// xhr.setRequestHeader('Content-Type', 'application/json');
-
-// xhr.send(JSON.stringify({ingredients}));
-
-// xhr.onload = () => {
-//     let data = JSON.parse(xhr.response);
-
-//     if (data) {
-//         const paragraphs = document.getElementsByTagName('p');
-//         for (elt of paragraphs) {
-//             elt.style['font-family'] = 'Avenir';
-//             elt.style['background-color'] = '#FF00FF';
-//             elt.style['font-size'] = '20pt';
-//         }
-//         console.log(data)
-//     }
-
-//     chrome.runtime.sendMessage({data});
-// }
