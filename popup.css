@@ -1,0 +1,89 @@
+body {
+    width: 420px;
+    height: 620px;
+    background-image: url("bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 31px;
+    font-weight: 550;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    margin: 3px 0px 3px 0px;
+}
+
+p {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+th {
+    text-align: left;
+}
+
+#divTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    background-color: white;
+    padding: 25px 18px 25px 18px;
+    height: 400px;
+    width: 80%;
+    margin-top: 10px;
+}
+
+#divTable2 {
+    height: 390px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+table {
+    
+    line-height: 20px;
+    color: #525252;
+}
+
+#name {
+    width: 60%;
+}
+
+#toxicity {
+    width: 25%;
+}
+
+#research {
+    width: 15%;
+}
+
+#footnote {
+    color: #525252;
+    font-style: italic;
+    line-height: 22px;
+}
+
+/* button {
+    width: 85px;
+    height: 25px;
+    background-color: transparent;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 25px;
+    border-width: 2px;
+    text-align: center;
+    margin: 10px;
+} */
