@@ -6,19 +6,6 @@ const product = document.createElement('p');
 product.textContent = `Product: ${JSON.parse(localStorage.getItem('product'))}`;
 div.appendChild(product);
 
-// const divBtn = document.createElement('div');
-// div.appendChild(divBtn);
-
-// const dataBtn = document.createElement('button');
-// dataBtn.setAttribute('type', 'button');
-// dataBtn.textContent = 'Information';
-// divBtn.appendChild(dataBtn);
-
-// const toxicityBtn = document.createElement('button');
-// toxicityBtn.setAttribute('type', 'button');
-// toxicityBtn.textContent = 'Research';
-// divBtn.appendChild(toxicityBtn);
-
 const divTable = document.createElement('div');
 divTable.setAttribute('id', 'divTable');
 div.appendChild(divTable);
